@@ -37,8 +37,16 @@
         background-color: #f85559;
       }
 
+      .text-primary {
+        color: #f85559;
+      }
+
       .shadow-fruits {
         box-shadow: 0px 8px 60px 0px rgba(0, 0, 0, 0.05);
+      }
+
+      .col-black {
+        color: #121212;
       }
     </style>
   </head>
@@ -102,7 +110,7 @@
                 We supply highly quality organic products
               </p>
               <a
-                class="inline-block font-extrabold text-xl bg-primary px-5 py-6 rounded-lg"
+                class="inline-block font-extrabold text-xl bg-primary px-8 py-5 rounded-lg"
                 href="#"
                 >Shop Now</a
               >
@@ -141,7 +149,7 @@
                 We supply highly quality organic products
               </p>
               <a
-                class="inline-block font-extrabold text-xl bg-primary px-5 py-6 rounded-lg"
+                class="inline-block font-extrabold text-xl bg-primary px-8 py-5 rounded-lg"
                 href="#"
                 >Shop Now</a
               >
@@ -180,7 +188,7 @@
                 We supply highly quality organic products
               </p>
               <a
-                class="inline-block font-extrabold text-xl bg-primary px-5 py-6 rounded-lg"
+                class="inline-block font-extrabold text-xl bg-primary px-8 py-5 rounded-lg"
                 href="#"
                 >Shop Now</a
               >
@@ -219,7 +227,7 @@
                 We supply highly quality organic products
               </p>
               <a
-                class="inline-block font-extrabold text-xl bg-primary px-5 py-6 rounded-lg"
+                class="inline-block font-extrabold text-xl bg-primary px-8 py-5 rounded-lg"
                 href="#"
                 >Shop Now</a
               >
@@ -243,37 +251,200 @@
 
         <!-- Fruits container -->
         <div
-          class="absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 flex items-center gap-24 px-16 py-12 bg-white rounded-lg shadow-fruits"
+          class="absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 flex items-center gap-24 text-center px-16 py-12 bg-white rounded-lg shadow-fruits"
         >
           <div>
-            <img class="w-32 mb-1" src="./images/fruit1.png" alt="fruit" />
+            <img
+              class="max-w-[144px] mb-1"
+              src="./images/fruit1.png"
+              alt="fruit"
+            />
             <p class="text-xl font-medium">Strawberry</p>
           </div>
 
           <div>
-            <img class="w-32 mb-1" src="./images/fruit2.png" alt="fruit" />
+            <img
+              class="max-w-[112px] mb-1"
+              src="./images/fruit2.png"
+              alt="fruit"
+            />
             <p class="text-xl font-medium">Orange</p>
           </div>
 
           <div>
-            <img class="w-32 mb-1" src="./images/fruit3.png" alt="fruit" />
+            <img
+              class="max-w-[154px] mb-1"
+              src="./images/fruit3.png"
+              alt="fruit"
+            />
             <p class="text-xl font-medium">Mango</p>
           </div>
 
           <div>
-            <img class="w-32 mb-1" src="./images/fruit4.png" alt="fruit" />
+            <img
+              class="max-w-[146px] mb-1"
+              src="./images/fruit4.png"
+              alt="fruit"
+            />
             <p class="text-xl font-medium">Strawberry</p>
           </div>
 
           <div>
-            <img class="w-32 mb-1" src="./images/fruit5.png" alt="fruit" />
+            <img
+              class="max-w-[140px] mb-1"
+              src="./images/fruit5.png"
+              alt="fruit"
+            />
             <p class="text-xl font-medium">Mango</p>
           </div>
         </div>
       </section>
 
-      <!-- Fruits section -->
-      <section></section>
+      <!-- Deal of the day section -->
+      <section class="container mx-auto mt-64 bg-[url('./')]">
+        <!-- Heading -->
+        <div class="flex items-center justify-between mb-12">
+          <div class="max-w-xl">
+            <h2 class="font-extrabold text-5xl mb-6">Deal of the day</h2>
+            <p class="font-medium leading-7">
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical Latin literature from 45 BC, making
+              it over 2000 years old.
+            </p>
+          </div>
+
+          <!-- countdown -->
+          <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl font-extrabold mb-2">
+                <span style="--value: 29"></span>
+              </span>
+              Days
+            </div>
+
+            <span class="material-symbols-outlined pt-4"> more_vert </span>
+
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl font-extrabold mb-2">
+                <span style="--value: 15"></span>
+              </span>
+              Hours
+            </div>
+
+            <span class="material-symbols-outlined pt-4"> more_vert </span>
+
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl font-extrabold mb-2">
+                <span style="--value: 25"></span>
+              </span>
+              Minutes
+            </div>
+
+            <span class="material-symbols-outlined pt-4"> more_vert </span>
+
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl font-extrabold mb-2">
+                <span style="--value: 08"></span>
+              </span>
+              Seconds
+            </div>
+          </div>
+        </div>
+
+        <!-- Card container -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <!-- card 1 -->
+          <div
+            class="p-12 rounded-lg border border-[#121212] border-opacity-10"
+          >
+            <img class="mb-12 mx-auto" src="./images/fruit6.png" alt="fruit" />
+            <div class="text-center">
+              <h4 class="col-black text-2xl font-extrabold">12.90$ - 18.85$</h4>
+              <span
+                class="block w-full border-b border-[#121212] border-opacity-10 my-6"
+              ></span>
+              <p class="mb-6 font-medium col-black opacity-60">Apples</p>
+              <img
+                class="h-6 mx-auto object-contain mb-8"
+                src="./images/icons/star.svg"
+                alt="star icon"
+              />
+              <a class="text-lg font-bold text-primary" href="#">Details</a>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div
+            class="p-12 rounded-lg border border-[#121212] border-opacity-10"
+          >
+            <img class="mb-12 mx-auto" src="./images/fruit7.png" alt="fruit" />
+            <div class="text-center">
+              <h4 class="col-black text-2xl font-extrabold">12.90$ - 18.85$</h4>
+              <span
+                class="block w-full border-b border-[#121212] border-opacity-10 my-6"
+              ></span>
+              <p class="mb-6 font-medium col-black opacity-60">Orange</p>
+              <img
+                class="h-6 mx-auto object-contain mb-8"
+                src="./images/icons/star.svg"
+                alt="star icon"
+              />
+              <a class="text-lg font-bold text-primary" href="#">Details</a>
+            </div>
+          </div>
+
+          <!-- card 3 -->
+          <div
+            class="p-12 rounded-lg border border-[#121212] border-opacity-10"
+          >
+            <img class="mb-12 mx-auto" src="./images/fruit8.png" alt="fruit" />
+            <div class="text-center">
+              <h4 class="col-black text-2xl font-extrabold">12.90$ - 18.85$</h4>
+              <span
+                class="block w-full border-b border-[#121212] border-opacity-10 my-6"
+              ></span>
+              <p class="mb-6 font-medium col-black opacity-60">Red Dragon</p>
+              <img
+                class="h-6 mx-auto object-contain mb-8"
+                src="./images/icons/star.svg"
+                alt="star icon"
+              />
+              <a class="text-lg font-bold text-primary" href="#">Details</a>
+            </div>
+          </div>
+
+          <!-- card 4 -->
+          <div
+            class="p-12 rounded-lg border border-[#121212] border-opacity-10"
+          >
+            <img class="mb-12 mx-auto" src="./images/fruit9.png" alt="fruit" />
+            <div class="text-center">
+              <h4 class="col-black text-2xl font-extrabold">12.90$ - 18.85$</h4>
+              <span
+                class="block w-full border-b border-[#121212] border-opacity-10 my-6"
+              ></span>
+              <p class="mb-6 font-medium col-black opacity-60">Banana</p>
+              <img
+                class="h-6 mx-auto object-contain mb-8"
+                src="./images/icons/star.svg"
+                alt="star icon"
+              />
+              <a class="text-lg font-bold text-primary" href="#">Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center">
+          <a
+            class="inline-block font-extrabold text-xl text-white bg-primary px-8 py-5 rounded-lg"
+            href="#"
+            >Shop All</a
+          >
+        </div>
+      </section>
+
+      <!-- Testimonial section -->
+      <section class="mt-36"></section>
     </main>
   </body>
 </html>
