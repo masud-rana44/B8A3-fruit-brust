@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,7 +18,12 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
 
-    <!-- Tailwind -->
+    <!-- Tailwind + DaysiUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <title>Fruit Brust</title>
@@ -31,12 +36,16 @@
       .bg-primary {
         background-color: #f85559;
       }
+
+      .shadow-fruits {
+        box-shadow: 0px 8px 60px 0px rgba(0, 0, 0, 0.05);
+      }
     </style>
   </head>
-  <body class="font-lato pt-12">
+  <body class="font-lato">
     <!-- Header -->
     <header
-      class="container mx-auto flex items-center justify-between bg-primary rounded-full px-12 py-7"
+      class="container mx-auto flex items-center justify-between bg-primary rounded-full px-12 py-7 mt-12 mb-14"
     >
       <nav>
         <ul
@@ -69,5 +78,202 @@
         <span class="material-symbols-outlined"> menu </span>
       </div>
     </header>
+
+    <!-- Main -->
+    <main class="container mx-auto">
+      <!-- Hero Section -->
+      <section class="relative">
+        <div class="carousel w-full relative">
+          <!-- Banner 1 -->
+          <div id="slide1" class="carousel-item relative w-full">
+            <div class="relative w-full">
+              <img src="/images/banner1.png" class="w-full" />
+              <div
+                class="absolute inset-0 bg-gradient-to-b from-[#121212] to-transparent rounded-lg"
+              ></div>
+            </div>
+            <div
+              class="text-white text-center absolute top-[80px] left-1/2 -translate-x-1/2"
+            >
+              <h1 class="text-7xl font-extrabold mb-6">
+                Exotic tastes at your doorstep
+              </h1>
+              <p class="text-xl font-medium mb-8">
+                We supply highly quality organic products
+              </p>
+              <a
+                class="inline-block font-extrabold text-xl bg-primary px-5 py-6 rounded-lg"
+                href="#"
+                >Shop Now</a
+              >
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-[#121212] hover:bg-[#121212] border-none text-white"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-[#121212] hover:bg-[#121212] border-none text-white"
+                >❯</a
+              >
+            </div>
+          </div>
+
+          <!-- Banner 2 -->
+          <div id="slide2" class="carousel-item relative w-full">
+            <div class="relative w-full">
+              <img src="/images/banner2.png" class="w-full" />
+              <div
+                class="absolute inset-0 bg-gradient-to-b from-[#121212] to-transparent rounded-lg"
+              ></div>
+            </div>
+            <div
+              class="text-white text-center absolute top-[80px] left-1/2 -translate-x-1/2"
+            >
+              <h1 class="text-7xl font-extrabold mb-6">
+                Exotic tastes at your doorstep
+              </h1>
+              <p class="text-xl font-medium mb-8">
+                We supply highly quality organic products
+              </p>
+              <a
+                class="inline-block font-extrabold text-xl bg-primary px-5 py-6 rounded-lg"
+                href="#"
+                >Shop Now</a
+              >
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-[#121212] hover:bg-[#121212] border-none text-white"
+                >❮</a
+              >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-[#121212] hover:bg-[#121212] border-none text-white"
+                >❯</a
+              >
+            </div>
+          </div>
+
+          <!-- Banner 3 -->
+          <div id="slide3" class="carousel-item relative w-full">
+            <div class="relative w-full">
+              <img src="/images/banner3.png" class="w-full" />
+              <div
+                class="absolute inset-0 bg-gradient-to-b from-[#121212] to-transparent rounded-lg"
+              ></div>
+            </div>
+            <div
+              class="text-white text-center absolute top-[80px] left-1/2 -translate-x-1/2"
+            >
+              <h1 class="text-7xl font-extrabold mb-6">
+                Exotic tastes at your doorstep
+              </h1>
+              <p class="text-xl font-medium mb-8">
+                We supply highly quality organic products
+              </p>
+              <a
+                class="inline-block font-extrabold text-xl bg-primary px-5 py-6 rounded-lg"
+                href="#"
+                >Shop Now</a
+              >
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-[#121212] hover:bg-[#121212] border-none text-white"
+                >❮</a
+              >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-[#121212] hover:bg-[#121212] border-none text-white"
+                >❯</a
+              >
+            </div>
+          </div>
+
+          <!-- Banner 4 -->
+          <div id="slide4" class="carousel-item relative w-full">
+            <div class="relative w-full">
+              <img src="/images/banner4.png" class="w-full" />
+              <div
+                class="absolute inset-0 bg-gradient-to-b from-[#121212] to-transparent rounded-lg"
+              ></div>
+            </div>
+            <div
+              class="text-white text-center absolute top-[80px] left-1/2 -translate-x-1/2"
+            >
+              <h1 class="text-7xl font-extrabold mb-6">
+                Exotic tastes at your doorstep
+              </h1>
+              <p class="text-xl font-medium mb-8">
+                We supply highly quality organic products
+              </p>
+              <a
+                class="inline-block font-extrabold text-xl bg-primary px-5 py-6 rounded-lg"
+                href="#"
+                >Shop Now</a
+              >
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-[#121212] hover:bg-[#121212] border-none text-white"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-[#121212] hover:bg-[#121212] border-none text-white"
+                >❯</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Fruits container -->
+        <div
+          class="absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 flex items-center gap-24 px-16 py-12 bg-white rounded-lg shadow-fruits"
+        >
+          <div>
+            <img class="w-32 mb-1" src="./images/fruit1.png" alt="fruit" />
+            <p class="text-xl font-medium">Strawberry</p>
+          </div>
+
+          <div>
+            <img class="w-32 mb-1" src="./images/fruit2.png" alt="fruit" />
+            <p class="text-xl font-medium">Orange</p>
+          </div>
+
+          <div>
+            <img class="w-32 mb-1" src="./images/fruit3.png" alt="fruit" />
+            <p class="text-xl font-medium">Mango</p>
+          </div>
+
+          <div>
+            <img class="w-32 mb-1" src="./images/fruit4.png" alt="fruit" />
+            <p class="text-xl font-medium">Strawberry</p>
+          </div>
+
+          <div>
+            <img class="w-32 mb-1" src="./images/fruit5.png" alt="fruit" />
+            <p class="text-xl font-medium">Mango</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Fruits section -->
+      <section></section>
+    </main>
   </body>
 </html>
