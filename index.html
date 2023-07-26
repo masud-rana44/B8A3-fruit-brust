@@ -53,41 +53,86 @@
   <body class="font-lato">
     <!-- Header -->
     <header
-      class="lg:container mx-auto flex items-center justify-between lg:bg-[#f85559] rounded-full px-5 lg:px-12 lg:py-7 mt-11 lg:mt-12 mb-6 lg:mb-14"
+      class="navbar lg:container mx-auto flex items-center justify-between lg:bg-[#f85559] rounded-full px-5 lg:px-12 lg:py-7 mt-11 lg:mt-12 mb-6 lg:mb-14"
     >
-      <nav class="hidden lg:block">
-        <ul class="flex items-center gap-7 text-white font-medium text-lg">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">All Fruits</a></li>
-        </ul>
-      </nav>
-
-      <a class="flex items-center gap-2" href="#"
-        ><img class="w-8 lg:w-11 lg:h-11" src="./images/logo.png" alt="logo" />
-        <h3 class="text-xl lg:text-4xl font-bold col-black lg:text-white">
-          Fruit Burst
-        </h3>
-      </a>
-
-      <div class="hidden lg:flex items-center relative min-w-[400px]">
-        <input
-          class="border-none outline-none px-7 py-4 rounded-full w-full"
-          type="text"
-          placeholder="Search here"
-        />
-        <button class="absolute right-4">
-          <img src="./images/icons/search-icon.svg" alt="Search icon" />
-        </button>
+      <div class="navbar-start hidden lg:flex">
+        <nav class="hidden lg:block">
+          <ul class="flex items-center gap-7 text-white font-medium text-lg">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">All Fruits</a></li>
+          </ul>
+        </nav>
       </div>
 
-      <div class="lg:hidden flex items-center justify-center">
-        <span
-          class="material-symbols-outlined text-2xl col-black cursor-pointer"
-        >
-          menu
-        </span>
+      <!-- Center with dropdown -->
+      <div class="navbar-center">
+        <!-- Logo -->
+        <a class="flex items-center gap-2" href="#"
+          ><img
+            class="w-8 lg:w-11 lg:h-11"
+            src="./images/logo.png"
+            alt="logo"
+          />
+          <h3 class="text-xl lg:text-4xl font-bold col-black lg:text-white">
+            Fruit Burst
+          </h3>
+        </a>
+      </div>
+
+      <!-- Search box -->
+      <div class="navbar-end">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </label>
+          <ul
+            tabindex="0"
+            class="menu menu-md dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 right-0"
+          >
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">All Fruits</a></li>
+
+            <!-- Dropdown search box -->
+            <div class="flex items-center relative border rounded-full mt-4">
+              <input
+                class="border-none outline-none px-4 py-3 rounded-full w-full"
+                type="text"
+                placeholder="Search here"
+              />
+              <button class="absolute right-4">
+                <img src="./images/icons/search-icon.svg" alt="Search icon" />
+              </button>
+            </div>
+          </ul>
+        </div>
+
+        <div class="hidden lg:flex items-center relative min-w-[400px]">
+          <input
+            class="border-none outline-none px-7 py-4 rounded-full w-full"
+            type="text"
+            placeholder="Search here"
+          />
+          <button class="absolute right-4">
+            <img src="./images/icons/search-icon.svg" alt="Search icon" />
+          </button>
+        </div>
       </div>
     </header>
 
