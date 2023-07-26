@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
@@ -53,12 +53,10 @@
   <body class="font-lato">
     <!-- Header -->
     <header
-      class="container mx-auto flex items-center justify-between bg-primary rounded-full px-12 py-7 mt-12 mb-14"
+      class="container mx-auto flex items-center justify-between lg:bg-primary rounded-full px-5 lg:px-12 lg:py-7 mt-11 lg:mt-12 mb-6 lg:mb-14"
     >
-      <nav>
-        <ul
-          class="hidden lg:flex lg:items-center lg:gap-7 text-white font-medium text-lg"
-        >
+      <nav class="hidden lg:block">
+        <ul class="flex items-center gap-7 text-white font-medium text-lg">
           <li><a href="#">Home</a></li>
           <li><a href="#">About Us</a></li>
           <li><a href="#">Shop</a></li>
@@ -68,7 +66,7 @@
 
       <a class="flex items-center gap-2" href="#"
         ><img class="w-11 h-11" src="./images/logo.png" alt="logo" />
-        <h3 class="text-4xl font-bold text-white">Fruit Burst</h3>
+        <h3 class="text-4xl font-bold col-black lg:text-white">Fruit Burst</h3>
       </a>
 
       <div class="hidden lg:flex items-center relative min-w-[400px]">
@@ -82,8 +80,8 @@
         </button>
       </div>
 
-      <div class="lg:hidden">
-        <span class="material-symbols-outlined"> menu </span>
+      <div class="lg:hidden flex items-center justify-center">
+        <span class="material-symbols-outlined text-3xl col-black"> menu </span>
       </div>
     </header>
 
@@ -95,7 +93,7 @@
           <!-- Banner 1 -->
           <div id="slide1" class="carousel-item relative w-full">
             <div class="relative w-full">
-              <img src="/images/banner1.png" class="w-full" />
+              <img src="./images/banner1.png" class="w-full" />
               <div
                 class="absolute inset-0 bg-gradient-to-b from-[#121212] to-transparent rounded-lg"
               ></div>
@@ -134,7 +132,7 @@
           <!-- Banner 2 -->
           <div id="slide2" class="carousel-item relative w-full">
             <div class="relative w-full">
-              <img src="/images/banner2.png" class="w-full" />
+              <img src="./images/banner2.png" class="w-full" />
               <div
                 class="absolute inset-0 bg-gradient-to-b from-[#121212] to-transparent rounded-lg"
               ></div>
@@ -173,7 +171,7 @@
           <!-- Banner 3 -->
           <div id="slide3" class="carousel-item relative w-full">
             <div class="relative w-full">
-              <img src="/images/banner3.png" class="w-full" />
+              <img src="./images/banner3.png" class="w-full" />
               <div
                 class="absolute inset-0 bg-gradient-to-b from-[#121212] to-transparent rounded-lg"
               ></div>
@@ -212,7 +210,7 @@
           <!-- Banner 4 -->
           <div id="slide4" class="carousel-item relative w-full">
             <div class="relative w-full">
-              <img src="/images/banner4.png" class="w-full" />
+              <img src="./images/banner4.png" class="w-full" />
               <div
                 class="absolute inset-0 bg-gradient-to-b from-[#121212] to-transparent rounded-lg"
               ></div>
@@ -251,7 +249,7 @@
 
         <!-- Fruits container -->
         <div
-          class="absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 flex items-center gap-24 text-center px-16 py-12 bg-white rounded-lg shadow-fruits"
+          class="absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 hidden md:flex items-center gap-24 text-center px-16 py-12 bg-white rounded-lg shadow-fruits"
         >
           <div>
             <img
